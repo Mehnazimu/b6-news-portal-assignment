@@ -47,7 +47,8 @@ const displayCatDetails = news => {
         const newsContainer =document.getElementById('cat-details');
         newsContainer.innerHTML = '';
         for(items of news){
-            console.log(items);
+             console.log(news.length);
+
             
            const catDetailsDiv = document.createElement('div');
            catDetailsDiv.classList.add('card' , 'lg:card-side', 'bg-base-100', 'shadow-xl');
