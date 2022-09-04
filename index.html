@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online News Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="container mx-auto">
+    <!-- header section -->
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl"><span class="text-indigo-500">Online </span> News
+                    Portal</a>
+            </div>
+            <div class="flex-none gap-2">
+                <div>
+                    <a class="btn btn-ghost normal-case text-xl"> Home</a>
+                </div>
+                <div>
+                    <a class="btn btn-ghost normal-case text-xl">Blog</a>
+                </div>
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img src="https://placeimg.com/80/80/people" />
+                    </div>
+                </label>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <!-- Header section end -->
+    <!-- Main section -->
+    <main>
+        <!-- Menu bar start -->
+        <section>
+            <div id="menu-bar">
+
+            </div>
+            <!-- <ul  class="menu menu-horizontal bg-base-100">
+                 <li><a>Item 1</a></li> -->
+
+            <!-- </ul> -->
+
+        </section>
+        <!-- Menu bar end -->
+        <!-- input section -->
+        <section class="mb-5">
+            <div class="form-control">
+                <input type="text" placeholder="found items" class="input input-bordered" />
+            </div>
+        </section>
+        <!-- news section -->
+        <section>
+            <div id="cat-details" class="card lg:card-side bg-base-100 shadow-xl">
+                <!-- <figure><img src="https://placeimg.com/400/400/arch" alt="Album"></figure>
+                <div class="card-body">
+                    <h2 class="card-title">New album is released!</h2>
+                    <p>Click the button to listen on Spotiwhy app.</p>
+                    <div class="card-actions ">
+                        <button class="btn btn-primary">Listen</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/loadNews.js"></script>
+</body>
+
+</html>
