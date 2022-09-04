@@ -45,10 +45,14 @@ const displayCatDetails = news => {
     // console.log(news);
    
         const newsContainer =document.getElementById('cat-details');
+        newsContainer.innerHTML = '';
         for(items of news){
             console.log(items);
+            
+           const catDetailsDiv = document.createElement('div');
+           catDetailsDiv.classList.add('card' , 'lg:card-side', 'bg-base-100', 'shadow-xl');
 
-        newsContainer.innerHTML=`
+        catDetailsDiv.innerHTML=`
        <figure><img class="w-80" src="${items.image_url}" alt="Album"></figure>
         <div class="card-body">
          <h2 class="font-bold">${items.title}</h2>
@@ -63,7 +67,8 @@ const displayCatDetails = news => {
         </div>
     </div>
     `;
-        }
+     newsContainer.appendChild(catDetailsDiv);
+    }
 
     
 
