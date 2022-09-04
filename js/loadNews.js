@@ -63,7 +63,18 @@ const displayCatDetails = news => {
          <div><span class="font-bold">ratings :${items.rating.number} ${items.rating.badge} </span></div>
          </div>
         <div class=" ">
-            <button class="btn btn-primary">more...</button>
+        <label for="my-modal-3" class="btn modal-button">more</label>
+
+
+        <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+        <div class="modal">
+            <div class="modal-box relative">
+                <label for="my-modal-3"
+                    class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                <h3 id="details -news-modal" class="text-lg font-bold">author :${items.author.name}</h3>
+                <p class="py-4">${items.author.published_date}</p>
+            </div>
+        </div>
         </div>
     </div>
     `;
